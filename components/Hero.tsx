@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         <img
           src={ASSETS.HERO_FULL}
           className="w-full h-full object-cover"
-          style={{ objectPosition: 'center 35%' }}
+          style={{ objectPosition: 'center center' }}
           alt="Matrimonio en La Palma & El Tucán"
           loading="eager"
           fetchPriority="high"

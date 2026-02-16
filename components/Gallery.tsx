@@ -17,6 +17,7 @@ const GALLERY_IMAGES = [
   { src: ASSETS.SALIDA_CONFETI, alt: "Celebración con confeti" },
   { src: ASSETS.NOVIA_HABITACION, alt: "Novia preparándose en la cabaña" },
   { src: ASSETS.ANILLOS, alt: "Intercambio de anillos" },
+  { src: ASSETS.PAREJA_ARCOIRIS, alt: "Pareja con arcoíris y montañas" },
 ];
 
 const Gallery: React.FC = () => {

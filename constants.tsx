@@ -24,7 +24,8 @@ const CARD = `${CDN}/f_auto,q_auto,w_800`;    // Cards y thumbnails
 
 export const ASSETS = {
   // Hero y CTA
-  HERO_FULL: `${FULL}/lpet-matrimonios/pareja-arcoiris.jpg`,
+  HERO_FULL: `${FULL}/lpet-matrimonios/salida-confeti-dia.jpg`,
+  PAREJA_ARCOIRIS: `${HQ}/lpet-matrimonios/pareja-arcoiris.jpg`,
   CTA_BG: `${FULL}/lpet-matrimonios/dip-romantico.jpg`,
   // Ceremonia
   CEREMONIA: `${HQ}/lpet-matrimonios/salida-confeti-dia.jpg`,
@@ -51,7 +52,7 @@ export const ASSETS = {
   ESCRIBIENDO_VOTOS: `${HQ}/lpet-matrimonios/escribiendo-votos.jpg`,
   JARDIN_BW: `${HQ}/lpet-matrimonios/pareja-jardin-bw.jpg`,
   // Reutilizadas de empresariales
-  CAFETALES: `${CDN_ALT}/f_auto,q_auto,w_1920/lpet/cafetales.png`,
+  CAFETALES: `${FULL}/lpet-matrimonios/novio-naturaleza.jpg`,
   CABANA: `${CDN_ALT}/f_auto,q_auto,w_1000/lpet/cabana-interior.png`,
   COFFEE_TOUR: `${CDN}/f_auto,q_auto,w_1000/lpet-eventos/coffee-tour-guiado.png`,
 };
