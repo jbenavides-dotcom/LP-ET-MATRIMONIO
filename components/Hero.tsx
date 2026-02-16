@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
           loading="eager"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
       </div>
 

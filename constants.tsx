@@ -24,7 +24,7 @@ const CARD = `${CDN}/f_auto,q_auto,w_800`;    // Cards y thumbnails
 
 export const ASSETS = {
   // Hero y CTA
-  HERO_FULL: `${FULL}/lpet-matrimonios/salida-confeti-dia.jpg`,
+  HERO_FULL: `${FULL}/lpet-matrimonios/ceremonia-panoramica-bw.jpg`,
   PAREJA_ARCOIRIS: `${HQ}/lpet-matrimonios/pareja-arcoiris.jpg`,
   CTA_BG: `${FULL}/lpet-matrimonios/dip-romantico.jpg`,
   // Ceremonia
