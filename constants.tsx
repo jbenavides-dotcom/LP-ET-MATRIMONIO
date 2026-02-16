@@ -15,38 +15,45 @@ import {
   Leaf,
 } from 'lucide-react';
 
-// ASSETS DE CLOUDINARY
+// ASSETS DE CLOUDINARY - Fotos profesionales de bodas reales (alta resolución)
 const CDN = "https://res.cloudinary.com/dkqocgknd/image/upload";
 const CDN_ALT = "https://res.cloudinary.com/dsylu9a7k/image/upload";
-
-// Pipelines: algunas fotos no soportan efectos extra después de e_upscale
-const UP_FULL = `${CDN}/e_upscale/f_auto,q_90,w_1920`;
-const UP_HQ = `${CDN}/e_upscale/f_auto,q_90,w_1000`;
-const UP_CARD = `${CDN}/e_upscale/f_auto,q_90,w_800`;
-// Enhanced: upscale + restauración facial + mejora (solo fotos compatibles)
-const ENH_FULL = `${CDN}/e_upscale/e_gen_restore/e_improve/e_auto_brightness/f_auto,q_90,w_1920`;
-const ENH_HQ = `${CDN}/e_upscale/e_gen_restore/e_improve/e_auto_brightness/f_auto,q_90,w_1000`;
+const FULL = `${CDN}/f_auto,q_auto,w_1920`;  // Hero y fondos full-width
+const HQ = `${CDN}/f_auto,q_auto,w_1000`;    // Secciones principales
+const CARD = `${CDN}/f_auto,q_auto,w_800`;    // Cards y thumbnails
 
 export const ASSETS = {
-  // Hero - compatible con enhance completo
-  HERO_FULL: `${ENH_FULL}/lpet-matrimonios/pareja-novios.jpg`,
-  // CTA - solo upscale (no soporta efectos extra)
-  CTA_BG: `${UP_FULL}/lpet-matrimonios/coctel-recepcion.jpg`,
-  // Compatible con enhance
-  CEREMONIA: `${ENH_HQ}/lpet-matrimonios/ceremonia.jpg`,
-  INVITADOS: `${ENH_HQ}/lpet-matrimonios/invitados-deck.jpg`,
-  // Solo upscale (no soportan efectos extra)
-  COCTEL: `${UP_HQ}/lpet-matrimonios/coctel-recepcion.jpg`,
-  NOVIA_CABANA: `${UP_HQ}/lpet-matrimonios/novia-cabana.jpg`,
-  NOVIA_NATURALEZA: `${UP_HQ}/lpet-matrimonios/novia-naturaleza.jpg`,
-  MUSICO: `${UP_HQ}/lpet-matrimonios/musico-atardecer.jpg`,
-  CHEFS: `${UP_HQ}/lpet-matrimonios/chefs-fogon.jpg`,
-  DJ_FIESTA: `${UP_HQ}/lpet-matrimonios/dj-fiesta.jpg`,
-  TUCAN: `${UP_CARD}/lpet-matrimonios/tucan.jpg`,
-  // Reutilizadas de empresariales (solo upscale compatible)
-  CAFETALES: `${CDN_ALT}/e_upscale/f_auto,q_90,w_1920/lpet/cafetales.png`,
-  CABANA: `${CDN_ALT}/e_upscale/f_auto,q_90,w_1000/lpet/cabana-interior.png`,
-  COFFEE_TOUR: `${UP_HQ}/lpet-eventos/coffee-tour-guiado.png`,
+  // Hero y CTA
+  HERO_FULL: `${FULL}/lpet-matrimonios/pareja-arcoiris.jpg`,
+  CTA_BG: `${FULL}/lpet-matrimonios/dip-romantico.jpg`,
+  // Ceremonia
+  CEREMONIA: `${HQ}/lpet-matrimonios/salida-confeti-dia.jpg`,
+  CEREMONIA_PANORAMICA: `${HQ}/lpet-matrimonios/ceremonia-panoramica-bw.jpg`,
+  VOTOS: `${HQ}/lpet-matrimonios/votos-emotivos.jpg`,
+  ANILLOS: `${HQ}/lpet-matrimonios/intercambio-anillos.jpg`,
+  ARCO_FLORAL: `${HQ}/lpet-matrimonios/pareja-arco-floral.jpg`,
+  SALIDA_CONFETI: `${HQ}/lpet-matrimonios/salida-confeti-noche.jpg`,
+  // Pareja
+  BESO_FRENTE: `${HQ}/lpet-matrimonios/beso-frente.jpg`,
+  PAREJA_SONRIENTE: `${HQ}/lpet-matrimonios/pareja-sonriente.jpg`,
+  ABRAZO_DORADA: `${HQ}/lpet-matrimonios/abrazo-hora-dorada.jpg`,
+  NOVIA_CARCAJADA: `${HQ}/lpet-matrimonios/novia-carcajada.jpg`,
+  // Recepción y fiesta
+  MESA_RECEPCION: `${HQ}/lpet-matrimonios/mesa-recepcion.jpg`,
+  PAREJA_BAR: `${HQ}/lpet-matrimonios/pareja-bar.jpg`,
+  DETALLE_FLORAL: `${HQ}/lpet-matrimonios/detalle-floral-mesa.jpg`,
+  // Preparativos y alojamiento
+  NOVIA_RIENDO: `${HQ}/lpet-matrimonios/novia-riendo.jpg`,
+  CHAMPAGNE: `${HQ}/lpet-matrimonios/champagne-preparativos.jpg`,
+  NOVIA_HABITACION: `${HQ}/lpet-matrimonios/novia-habitacion.jpg`,
+  // Otros
+  NOVIO_NATURALEZA: `${HQ}/lpet-matrimonios/novio-naturaleza.jpg`,
+  ESCRIBIENDO_VOTOS: `${HQ}/lpet-matrimonios/escribiendo-votos.jpg`,
+  JARDIN_BW: `${HQ}/lpet-matrimonios/pareja-jardin-bw.jpg`,
+  // Reutilizadas de empresariales
+  CAFETALES: `${CDN_ALT}/f_auto,q_auto,w_1920/lpet/cafetales.png`,
+  CABANA: `${CDN_ALT}/f_auto,q_auto,w_1000/lpet/cabana-interior.png`,
+  COFFEE_TOUR: `${CDN}/f_auto,q_auto,w_1000/lpet-eventos/coffee-tour-guiado.png`,
 };
 
 // WHATSAPP RESERVAS
@@ -119,43 +126,43 @@ export const EVENT_TYPES = [
 export const JOURNEY_STEPS = [
   {
     number: "01",
-    title: "Llegada al Paraíso",
-    description: "El viaje de 90 minutos desde Bogotá por carreteras históricas marca el inicio de un día mágico. Tus invitados descubren un paisaje que quita el aliento entre montañas y cafetales.",
-    image: ASSETS.NOVIA_CABANA,
+    title: "Preparativos en el Paraíso",
+    description: "Prepárense rodeados de naturaleza en cabañas privadas entre cafetales. Champagne, risas y la emoción del gran día en un entorno único.",
+    image: ASSETS.CHAMPAGNE,
   },
   {
     number: "02",
     title: "La Ceremonia",
     description: "Al aire libre, con las montañas como testigo y el sonido de la naturaleza como banda sonora. Un escenario que ningún salón puede igualar.",
-    image: ASSETS.CEREMONIA,
+    image: ASSETS.VOTOS,
   },
   {
     number: "03",
     title: "Cóctel & Celebración",
     description: "Brindis al atardecer con cócteles artesanales y música en vivo. El momento perfecto para compartir con familia y amigos.",
-    image: ASSETS.COCTEL,
+    image: ASSETS.PAREJA_BAR,
   },
   {
     number: "04",
     title: "Cena Farm-to-Table",
-    description: "Un banquete artesanal preparado al fuego con ingredientes de nuestra huerta orgánica. Sabores auténticos para una noche inolvidable.",
-    image: ASSETS.CHEFS,
+    description: "Un banquete artesanal con ingredientes de nuestra huerta orgánica. Mesas elegantes en espacios naturales para una noche inolvidable.",
+    image: ASSETS.MESA_RECEPCION,
   },
   {
     number: "05",
     title: "Fiesta & Recuerdos",
-    description: "La noche se enciende con DJ profesional y pista de baile bajo las estrellas. Momentos que quedarán grabados para siempre.",
-    image: ASSETS.DJ_FIESTA,
+    description: "Confeti, risas y abrazos bajo las estrellas. Momentos que quedarán grabados para siempre en la memoria de todos.",
+    image: ASSETS.SALIDA_CONFETI,
   },
 ];
 
 // EXPERIENCIAS DE BODA
 export const ACTIVITIES = [
   { label: "Ceremonia en la Naturaleza", image: ASSETS.CEREMONIA, icon: <TreePine className="w-5 h-5" /> },
-  { label: "Cóctel al Atardecer", image: ASSETS.COCTEL, icon: <Wine className="w-5 h-5" /> },
-  { label: "Música en Vivo", image: ASSETS.MUSICO, icon: <Music className="w-5 h-5" /> },
-  { label: "Banquete al Fuego", image: ASSETS.CHEFS, icon: <Flame className="w-5 h-5" /> },
-  { label: "Fiesta con DJ", image: ASSETS.DJ_FIESTA, icon: <PartyPopper className="w-5 h-5" /> },
+  { label: "Recepción Elegante", image: ASSETS.MESA_RECEPCION, icon: <Wine className="w-5 h-5" /> },
+  { label: "Preparativos de Ensueño", image: ASSETS.NOVIA_RIENDO, icon: <Heart className="w-5 h-5" /> },
+  { label: "Momentos Únicos", image: ASSETS.ABRAZO_DORADA, icon: <Flame className="w-5 h-5" /> },
+  { label: "Celebración & Fiesta", image: ASSETS.SALIDA_CONFETI, icon: <PartyPopper className="w-5 h-5" /> },
   { label: "Coffee Tour para Invitados", image: ASSETS.COFFEE_TOUR, icon: <Coffee className="w-5 h-5" /> },
 ];
 

@@ -5,16 +5,18 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const GALLERY_IMAGES = [
-  { src: ASSETS.CEREMONIA, alt: "Ceremonia de matrimonio al aire libre" },
-  { src: ASSETS.HERO_FULL, alt: "Pareja de novios en La Palma & El Tucán" },
-  { src: ASSETS.COCTEL, alt: "Cóctel y recepción de boda" },
-  { src: ASSETS.NOVIA_CABANA, alt: "Novia en cabaña entre cafetales" },
-  { src: ASSETS.NOVIA_NATURALEZA, alt: "Novia en la naturaleza" },
-  { src: ASSETS.MUSICO, alt: "Música en vivo al atardecer" },
-  { src: ASSETS.INVITADOS, alt: "Invitados disfrutando en el deck" },
-  { src: ASSETS.CHEFS, alt: "Chefs preparando banquete al fogón" },
-  { src: ASSETS.DJ_FIESTA, alt: "Fiesta con DJ" },
-  { src: ASSETS.TUCAN, alt: "Tucán en la finca" },
+  { src: ASSETS.CEREMONIA, alt: "Salida de ceremonia con confeti" },
+  { src: ASSETS.ABRAZO_DORADA, alt: "Abrazo de novios al atardecer" },
+  { src: ASSETS.VOTOS, alt: "Lectura de votos matrimoniales" },
+  { src: ASSETS.MESA_RECEPCION, alt: "Mesa de recepción elegante" },
+  { src: ASSETS.NOVIA_RIENDO, alt: "Novia riendo de felicidad" },
+  { src: ASSETS.CHAMPAGNE, alt: "Brindis de preparativos" },
+  { src: ASSETS.ARCO_FLORAL, alt: "Pareja bajo arco de flores" },
+  { src: ASSETS.PAREJA_BAR, alt: "Pareja en el bar del venue" },
+  { src: ASSETS.NOVIA_CARCAJADA, alt: "Momento de alegría espontánea" },
+  { src: ASSETS.SALIDA_CONFETI, alt: "Celebración con confeti" },
+  { src: ASSETS.NOVIA_HABITACION, alt: "Novia preparándose en la cabaña" },
+  { src: ASSETS.ANILLOS, alt: "Intercambio de anillos" },
 ];
 
 const Gallery: React.FC = () => {

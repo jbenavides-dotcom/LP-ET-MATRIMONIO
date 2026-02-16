@@ -26,7 +26,7 @@ const Spaces: React.FC = () => {
                 <img src={ASSETS.CEREMONIA} alt="Ceremonia de matrimonio en La Palma & El Tucán" className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="rounded-2xl overflow-hidden aspect-[3/4] translate-y-6 sm:translate-y-10">
-                <img src={ASSETS.NOVIA_CABANA} alt="Novia en cabaña de La Palma & El Tucán" className="w-full h-full object-cover" loading="lazy" />
+                <img src={ASSETS.NOVIA_HABITACION} alt="Novia preparándose en cabaña de La Palma & El Tucán" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
           </div>

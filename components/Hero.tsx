@@ -9,8 +9,8 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={ASSETS.HERO_FULL}
-          className="w-full h-full object-cover object-[center_40%]"
-          style={{ objectPosition: 'center 40%' }}
+          className="w-full h-full object-cover"
+          style={{ objectPosition: 'center 35%' }}
           alt="Matrimonio en La Palma & El Tucán"
           loading="eager"
           fetchPriority="high"

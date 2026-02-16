@@ -13,12 +13,12 @@ const TESTIMONIALS = [
   {
     quote: "Elegimos La Palma & El Tucán porque queríamos algo diferente, y superó todas nuestras expectativas. La comida, la decoración, el servicio... cada detalle fue perfecto.",
     label: "Boda para 30 invitados",
-    image: ASSETS.COCTEL,
+    image: ASSETS.MESA_RECEPCION,
   },
   {
     quote: "Nuestros invitados llegaron desde Bogotá y quedaron impresionados con el lugar. Las cabañas entre cafetales, la ceremonia al aire libre, la fiesta bajo las estrellas. Inolvidable.",
     label: "Destination wedding",
-    image: ASSETS.INVITADOS,
+    image: ASSETS.ABRAZO_DORADA,
   },
 ];
 
