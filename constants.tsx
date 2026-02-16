@@ -18,26 +18,29 @@ import {
 // ASSETS DE CLOUDINARY
 const CDN_BASE = "https://res.cloudinary.com/dkqocgknd/image/upload";
 const CDN_OLD = "https://res.cloudinary.com/dsylu9a7k/image/upload/f_auto,q_90,w_800";
-const CDN_HQ = `${CDN_BASE}/f_auto,q_90,w_1000`;
-const CDN_FULL = `${CDN_BASE}/f_auto,q_90`;
+// Upscale con IA + optimización: las fotos originales son baja resolución
+const CDN_UP_FULL = `${CDN_BASE}/e_upscale/f_auto,q_90,w_1920`;
+const CDN_UP_HQ = `${CDN_BASE}/e_upscale/f_auto,q_90,w_1000`;
+const CDN_UP_CARD = `${CDN_BASE}/e_upscale/f_auto,q_90,w_800`;
 
 export const ASSETS = {
-  // Fotos de matrimonios - alta calidad
-  HERO_FULL: `${CDN_FULL}/lpet-matrimonios/pareja-novios.jpg`,
-  CTA_BG: `${CDN_FULL}/lpet-matrimonios/coctel-recepcion.jpg`,
-  CEREMONIA: `${CDN_HQ}/lpet-matrimonios/ceremonia.jpg`,
-  COCTEL: `${CDN_HQ}/lpet-matrimonios/coctel-recepcion.jpg`,
-  NOVIA_CABANA: `${CDN_HQ}/lpet-matrimonios/novia-cabana.jpg`,
-  NOVIA_NATURALEZA: `${CDN_HQ}/lpet-matrimonios/novia-naturaleza.jpg`,
-  MUSICO: `${CDN_HQ}/lpet-matrimonios/musico-atardecer.jpg`,
-  INVITADOS: `${CDN_HQ}/lpet-matrimonios/invitados-deck.jpg`,
-  CHEFS: `${CDN_HQ}/lpet-matrimonios/chefs-fogon.jpg`,
-  DJ_FIESTA: `${CDN_HQ}/lpet-matrimonios/dj-fiesta.jpg`,
-  TUCAN: `${CDN_HQ}/lpet-matrimonios/tucan.jpg`,
-  // Reutilizadas de empresariales
+  // Hero y CTA - resolución completa con upscale IA
+  HERO_FULL: `${CDN_UP_FULL}/lpet-matrimonios/pareja-novios.jpg`,
+  CTA_BG: `${CDN_UP_FULL}/lpet-matrimonios/coctel-recepcion.jpg`,
+  // Secciones principales - upscale a 1000px
+  CEREMONIA: `${CDN_UP_HQ}/lpet-matrimonios/ceremonia.jpg`,
+  COCTEL: `${CDN_UP_HQ}/lpet-matrimonios/coctel-recepcion.jpg`,
+  NOVIA_CABANA: `${CDN_UP_HQ}/lpet-matrimonios/novia-cabana.jpg`,
+  NOVIA_NATURALEZA: `${CDN_UP_HQ}/lpet-matrimonios/novia-naturaleza.jpg`,
+  MUSICO: `${CDN_UP_HQ}/lpet-matrimonios/musico-atardecer.jpg`,
+  INVITADOS: `${CDN_UP_HQ}/lpet-matrimonios/invitados-deck.jpg`,
+  CHEFS: `${CDN_UP_HQ}/lpet-matrimonios/chefs-fogon.jpg`,
+  DJ_FIESTA: `${CDN_UP_HQ}/lpet-matrimonios/dj-fiesta.jpg`,
+  TUCAN: `${CDN_UP_CARD}/lpet-matrimonios/tucan.jpg`,
+  // Reutilizadas de empresariales (ya son buena resolución)
   CAFETALES: `${CDN_OLD}/lpet/cafetales.png`,
   CABANA: `${CDN_OLD}/lpet/cabana-interior.png`,
-  COFFEE_TOUR: `${CDN_HQ}/lpet-eventos/coffee-tour-guiado.png`,
+  COFFEE_TOUR: `${CDN_UP_HQ}/lpet-eventos/coffee-tour-guiado.png`,
 };
 
 // WHATSAPP RESERVAS
