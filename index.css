@@ -80,6 +80,11 @@ button:focus-visible {
   transform: translateX(0);
 }
 
+/* Luminosidad extra en todas las fotos */
+img {
+  filter: brightness(1.08) contrast(1.02);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .scroll-hidden,
   .scroll-hidden-left,
