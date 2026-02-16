@@ -52,7 +52,7 @@ export const ASSETS = {
   ESCRIBIENDO_VOTOS: `${HQ}/lpet-matrimonios/escribiendo-votos.jpg`,
   JARDIN_BW: `${HQ}/lpet-matrimonios/pareja-jardin-bw.jpg`,
   // Reutilizadas de empresariales
-  CAFETALES: `${FULL}/lpet-matrimonios/novio-naturaleza.jpg`,
+  CAFETALES: `${FULL}/lpet-matrimonios/pareja-arcoiris.jpg`,
   CABANA: `${CDN_ALT}/f_auto,q_auto,w_1000/lpet/cabana-interior.png`,
   COFFEE_TOUR: `${CDN}/f_auto,q_auto,w_1000/lpet-eventos/coffee-tour-guiado.png`,
 };
