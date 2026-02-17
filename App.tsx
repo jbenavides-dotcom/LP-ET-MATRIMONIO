@@ -41,6 +41,8 @@ const App: React.FC = () => {
               className="w-full h-full object-cover object-center opacity-30"
               alt="Celebra tu matrimonio en La Palma & El Tucán"
               loading="lazy"
+              width="1200"
+              height="800"
             />
             <div className="absolute inset-0 bg-brand-pink/20 mix-blend-multiply"></div>
           </div>

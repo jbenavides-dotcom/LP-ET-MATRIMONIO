@@ -18,7 +18,7 @@ import {
 // ASSETS DE CLOUDINARY - Fotos profesionales de bodas reales (alta resolución)
 const CDN = "https://res.cloudinary.com/dkqocgknd/image/upload";
 const CDN_ALT = "https://res.cloudinary.com/dsylu9a7k/image/upload";
-const FULL = `${CDN}/f_auto,q_auto,w_1920`;  // Hero y fondos full-width
+const FULL = `${CDN}/f_auto,q_auto,w_1200`;  // Hero y fondos full-width
 const HQ = `${CDN}/f_auto,q_auto,w_1000`;    // Secciones principales
 const CARD = `${CDN}/f_auto,q_auto,w_800`;    // Cards y thumbnails
 
