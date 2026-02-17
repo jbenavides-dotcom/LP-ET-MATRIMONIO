@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif mb-4 sm:mb-6 leading-[1.15] text-white">
-            Celebra tu matrimonio en medio <br className="hidden sm:block" /><span className="italic text-brand-beige">del bosque y el café</span>
+            Celebra tu matrimonio <br className="hidden sm:block" /><span className="italic text-brand-beige">en medio del bosque y el café</span>
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-4 sm:mb-6 max-w-2xl font-light leading-relaxed">
