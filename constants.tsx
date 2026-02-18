@@ -19,8 +19,8 @@ import {
 const CDN = "https://res.cloudinary.com/dkqocgknd/image/upload";
 const CDN_ALT = "https://res.cloudinary.com/dsylu9a7k/image/upload";
 const FULL = `${CDN}/f_auto,q_auto,w_1200`;  // Hero y fondos full-width
-const HQ = `${CDN}/f_auto,q_auto,w_1000`;    // Secciones principales
-const CARD = `${CDN}/f_auto,q_auto,w_800`;    // Cards y thumbnails
+const HQ = `${CDN}/f_auto,q_auto,w_600`;     // Secciones principales
+const CARD = `${CDN}/f_auto,q_auto,w_500`;    // Cards y thumbnails
 
 export const ASSETS = {
   // Hero y CTA
