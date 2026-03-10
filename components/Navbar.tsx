@@ -20,14 +20,11 @@ const Navbar: React.FC = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
         <a href="#hero" className="flex items-center group" aria-label="Ir al inicio">
-          <div className="flex flex-col leading-tight">
-            <span className="text-sm sm:text-base md:text-lg font-serif font-bold tracking-tight">
-              <span className="text-brand-gold">LA PALMA</span>
-              <span className="text-brand-pink mx-1">&</span>
-              <span className="text-brand-gold">EL TUCÁN</span>
-            </span>
-            <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.25em] sm:tracking-[0.3em] text-brand-pink font-bold">Matrimonios</span>
-          </div>
+          <img
+            src="https://res.cloudinary.com/dkqocgknd/image/upload/f_auto,q_auto/lpet/logo-hotel-light.svg"
+            alt="La Palma & El Tucán Hotel"
+            className="h-10 sm:h-12 w-auto object-contain"
+          />
         </a>
 
         <div className="flex items-center gap-10">

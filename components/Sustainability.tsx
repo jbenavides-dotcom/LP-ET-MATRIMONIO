@@ -45,7 +45,7 @@ const Sustainability: React.FC = () => {
           <div className="grid grid-cols-2 gap-4 sm:gap-6">
             {SUSTAINABILITY_STATS.map((stat, idx) => (
               <div key={idx} className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10 text-center">
-                <span className="text-3xl sm:text-4xl font-serif font-bold text-brand-beige block mb-2">{stat.value}</span>
+                <span className="text-3xl sm:text-4xl font-serif text-brand-beige block mb-2">{stat.value}</span>
                 <span className="text-white/60 text-xs uppercase tracking-widest font-bold">{stat.label}</span>
               </div>
             ))}

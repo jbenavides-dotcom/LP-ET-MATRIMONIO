@@ -88,13 +88,12 @@ const App: React.FC = () => {
       <footer id="footer" className="bg-brand-dark py-16 sm:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 lg:gap-20">
           <div className="col-span-1 sm:col-span-2">
-            <div className="flex flex-col mb-6 sm:mb-8 lg:mb-10">
-              <span className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold tracking-tight mb-1">
-                <span className="text-brand-gold">LA PALMA</span>
-                <span className="text-brand-pink mx-1">&</span>
-                <span className="text-brand-gold">EL TUCÁN</span>
-              </span>
-              <span className="text-brand-pink font-serif text-sm sm:text-base lg:text-lg">HOTEL</span>
+            <div className="mb-6 sm:mb-8 lg:mb-10">
+              <img
+                src="https://res.cloudinary.com/dkqocgknd/image/upload/f_auto,q_auto/lpet/logo-hotel-light.svg"
+                alt="La Palma & El Tucán Hotel"
+                className="h-12 sm:h-14 lg:h-16 w-auto object-contain"
+              />
             </div>
             <p className="text-white/50 max-w-sm leading-relaxed mb-6 sm:mb-8 lg:mb-10 text-sm font-light">
               Matrimonios en una finca cafetera galardonada internacionalmente. Zipacón, Cundinamarca, a 90 minutos de Bogotá.

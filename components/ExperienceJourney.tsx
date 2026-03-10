@@ -26,7 +26,7 @@ const ExperienceJourney: React.FC = () => {
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
-                <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-brand-pink text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center font-serif text-lg sm:text-xl font-bold">
+                <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-brand-pink text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center font-serif text-lg sm:text-xl">
                   {step.number}
                 </div>
               </div>
