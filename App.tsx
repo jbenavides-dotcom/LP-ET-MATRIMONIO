@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import StatsBar from './components/StatsBar';
 import WhySection from './components/WhySection';
 import EventTypes from './components/EventTypes';
 import ExperienceJourney from './components/ExperienceJourney';
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 
       <main>
         <Hero />
+        <StatsBar />
         <WhySection />
         <EventTypes />
         <Spaces />
